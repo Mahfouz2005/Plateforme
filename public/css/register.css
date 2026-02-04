@@ -1,0 +1,100 @@
+:root {
+    --primary-green: #22c55e;
+    --dark-text: #0f172a;
+    --light-text: #64748b;
+    --bg-soft: #f8fafc;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-soft);
+    color: var(--dark-text);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Lien retour */
+.back-link {
+    color: var(--light-text);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.back-link:hover {
+    color: var(--primary-green);
+}
+
+/* Card d'inscription */
+.register-card {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
+}
+
+/* Icône personnalisée */
+.icon-box {
+    background: rgba(34, 197, 94, 0.1);
+    color: var(--primary-green);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    margin: 0 auto 1.5rem;
+    font-size: 1.8rem;
+}
+
+/* Formulaires */
+.form-label {
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+    color: var(--dark-text);
+}
+
+.form-control {
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    background-color: #fcfcfd;
+    transition: all 0.2s;
+}
+
+.form-control:focus {
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.1);
+    background-color: #fff;
+}
+
+/* Bouton */
+.btn-gradient {
+    background-color: var(--primary-green) !important;
+    color: white !important;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.btn-gradient:hover {
+    background-color: #16a34a !important;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 15px rgba(34, 197, 94, 0.2);
+}
+
+.text-primary-custom {
+    color: var(--primary-green) !important;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.text-primary-custom:hover {
+    text-decoration: underline;
+}

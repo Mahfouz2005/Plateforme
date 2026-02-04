@@ -1,0 +1,127 @@
+:root {
+    --primary-green: #22c55e;
+    --premium-indigo: #6366f1;
+    --dark-text: #0f172a;
+    --light-text: #64748b;
+    --soft-bg: #f8fafc;
+}
+
+body {
+    background-color: #f0f2f5;
+    /* Fond gris pour faire ressortir les boîtes blanches */
+}
+
+/* LA BOITE PRINCIPALE */
+.template-card {
+    background: white !important;
+    border-radius: 24px !important;
+    border: 1px solid #e2e8f0 !important;
+    overflow: hidden !important;
+    /* TRÈS IMPORTANT : Coupe tout ce qui dépasse des bords arrondis */
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+    position: relative !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05) !important;
+    transition: transform 0.3s ease;
+}
+
+.template-card:hover {
+    transform: translateY(-8px);
+}
+
+/* LE CONTENEUR DE L'IMAGE (La cage) */
+.image-container {
+    width: 100% !important;
+    height: 220px !important;
+    /* On force une hauteur fixe pour toutes les images */
+    position: relative !important;
+    overflow: hidden !important;
+    /* Coupe l'image si elle dépasse des 220px */
+    background-color: #f1f5f9;
+}
+
+/* L'IMAGE ELLE-MÊME */
+.template-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    /* Redimensionne l'image sans la déformer pour remplir le cadre */
+    display: block !important;
+}
+
+/* LES BADGES (Gratuit / Premium) */
+.badge-status {
+    position: absolute !important;
+    top: 15px !important;
+    right: 15px !important;
+    z-index: 10 !important;
+    padding: 6px 14px !important;
+    border-radius: 10px !important;
+    font-size: 0.75rem !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.badge-free {
+    background: rgba(220, 252, 231, 0.9) !important;
+    color: #15803d !important;
+    border: 1px solid #bbf7d0;
+}
+
+.badge-premium {
+    background: rgba(224, 231, 255, 0.9) !important;
+    color: #4338ca !important;
+    border: 1px solid #c7d2fe;
+}
+
+/* LES BOUTONS */
+.btn-gradient {
+    background: linear-gradient(135deg, #22c55e, #16a34a) !important;
+    color: white !important;
+    border: none !important;
+    padding: 12px !important;
+    border-radius: 14px !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-buy {
+    background: linear-gradient(135deg, #6366f1, #4f46e5) !important;
+    color: white !important;
+    border: none !important;
+    padding: 12px !important;
+    border-radius: 14px !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* AUTRES STYLES */
+.category-pill {
+    background: #f1f5f9;
+    padding: 4px 12px;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.price-tag {
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
+.price-free {
+    color: var(--primary-green);
+}
+
+.price-premium {
+    color: var(--premium-indigo);
+}
